@@ -405,6 +405,7 @@ export class Editor extends EventEmitter<EditorEvents> {
     }
 
     this.view.setProps({
+      markViews: this.extensionManager.markViews,
       nodeViews: this.extensionManager.nodeViews,
     })
   }
